@@ -33,7 +33,17 @@
     border: none;
     border-radius: 8px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 40px
+    ;
+}
+
+main
+{
+max-width: 1440px;
+margin: 0 auto;
+}
+main > section {
+margin-top: 130px;
 }
 /* Navbar */
 .navbar{
@@ -69,10 +79,119 @@ text-decoration: none;
      margin-bottom: 40px;
      width: 100%;
 }
+/* Team section */
+ .Teams-section{
+   align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-feature{
+    margin-left: 80px;
+    max-width: 530px;
+}
+.gray {
+font-size: 3rem;
+color: #727272;
+font-weight: 600;
+}
+
+.black{
+font-size: 3rem;
+color: #131313;
+font-weight: bold;
+}
+.orange{
+    font-size: 3rem;
+color: #FF900E;
+font-weight: bold;
+}
+.p-des{
+    font-size: 1rem;
+    color: #727272;
+    font-weight: 600;
+}
+
+
+/* Some facts */
+.h3-tittle{
+    font-size:4rem;
+    color: #131313;
+    font-weight: bold;
+}
+/* Awart section */
+.awart-section {
+    display: flex;
+    justify-content: space-between;
+}
+.awart-container{
+    border: 1px solid #FF900E;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 100px;
+}
+/* Feactures setion */
+#feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features{
+    display: flex;
+    gap: 60px;
+}
+.feature-card{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.btn-ex{
+        font-size: 1.2rem;
+    background-color: #FF900E;
+     color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    width: 350px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -90px;
+
+}
+
+.sponsers{
+    text-align: center;
+    margin-top: 150px;
+}
+.sponsers-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 /* Responsive Banner */
 @media screen and (max-width:576px) {
-    .navbar, .nav-link {
+    .navbar, .nav-link, .Teams-section, .feature-card{
         flex-direction: column;
+    }
+.team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+}
+.awart-section{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (min-width :576px) and (max-width:992px) {
+    .Teams-section, .awart-container {
+        flex-direction: column;
+    }
+    .our-feature{
+        margin: 50px auto;
     }
     
 }
